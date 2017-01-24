@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rishabh.androidanimations.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="Coffee Hacks"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coffeehack"
+        android:id="@+id/imageView"/>
+    <LinearLayout
+android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zoom"
+            android:padding="5dp"
+            android:id="@+id/zoom" />
+        <Button
+            android:text="slide"
+            android:onClick="slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/slide" />
+        <Button
+            android:padding="5dp"
+            android:text="move"
+            android:onClick="move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/move" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:padding="5dp"
+            android:text="clockwise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clockwise"
+            android:onClick="clockwise"/>
+        <Button
+            android:padding="5dp"
+            android:text="fade"
+            android:onClick="fade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fade" />
+        <Button
+            android:padding="5dp"
+            android:text="blink"
+            android:onClick="blink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
